@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void connectAndListen() async {
-    var urlConnectSocket = 'http://localhost:5000';
+    var urlConnectSocket = 'https://tugomu.tk';
     socket =
         io(urlConnectSocket, OptionBuilder().enableForceNew().setTransports(['websocket']).build());
     socket.connect();
